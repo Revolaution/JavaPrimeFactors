@@ -18,13 +18,15 @@ public class PrimeFactors {
                 divisor++;
             }
         }
+        printOutPrimeFactors(primeFactors);
+    }
 
-        if (primeFactors.size() >= 1){
-            System.out.print(primeFactors.get(0));
-            for (int i = 1; i < primeFactors.size(); i++){
-                System.out.print("," + primeFactors.get(i));
+    public static void printOutPrimeFactors(ArrayList<Integer> primeFactorsArrayList){
+        if (primeFactorsArrayList.size() >= 1){
+            System.out.print(primeFactorsArrayList.get(0));
+            for (int i = 1; i < primeFactorsArrayList.size(); i++){
+                System.out.print("," + primeFactorsArrayList.get(i));
             }
         }
-
     }
 }
